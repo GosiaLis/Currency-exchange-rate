@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency exchange rate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="exchange.css">
+    <script src="https://kit.fontawesome.com/380bf811df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h1>Currency Exchange Rate App</h1>
+        <p>Check actual Currency exchange rate </p>
+
+        <div class="app-body">
+            <div class="section-left">
+                <input type="number" class="amount-one" value="1">
+                <select id="currency-one">
+                    <option value="PLN">PLN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBG">GBG</option>
+                    <option value="CPH">CPH</option>
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+
+            <button class="swap"><i class="fas fa-retweet"></i></button>
+
+            <div class="section-right">
+                <input type="number" class="amount-two" disabled>
+                <select id="currency-two">
+                    <option value="PLN">PLN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBG">GBG</option>
+                    <option value="CPH">CPH</option>
+                    <option value="USD">USD</option>
+                </select>
+            </div>
+        </div>
+        <p class="rate-info">111</p>
+    </div>
+
+    <script src="exchange.js"></script>
+</body>
+
+</html>
